@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+h1,
+h2{
+    margin-bottom: 1rem;
+}
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background: #a1c3ff;
+}
+img{
+    max-width: 100%;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+/* ========     navbar    =========== */
+.navbar{
+    background-color: #3474e6;
+    color: #fff;
+    height: 60px;
+    padding: 0 1.5rem;
+}
+.logo{
+    font-size: x-large;
+    font-weight: bold;
+}
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.navbar a{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav li{
+    margin-left: 1.2rem;
+    
+}
+.nav li a{
+    transition: 0.5s
+}
+.nav li a:hover{
+    color: lightblue;
+    transition: 0.5s;
+}
+
+/* ========     header    =========== */
+
+.header{
+    background-color: #0151cc;
+    color: #fff;
+    min-height: 400 px;
+    padding: 2rem;
+}
+.header h2{
+    font-size: 3rem;
+    line-height: 1.2;
+}
+img{
+    max-width: 400px;
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ========     boxes    =========== */
+
+.boxes{
+    margin-top: 1.5rem;
+}
+
+.boxes .container{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.box{
+    flex: 1 0 217px;
+    background-color: #0151cc;
+    color: #fff;
+    border-radius: 10px;
+    margin: 10px 20px;
+    padding: 15px 20px;
+}
+
+
+@media(max-width: 768px){
+    .header .container{
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+    }
+    img{
+        margin-top: 1.5rem;
+        max-width: 300px;
+    }
+}
